@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Web from "./screens/Web";
+import Other from "./screens/Other";
+import Apps from "./screens/Apps";
+import Navbar from "./components/Navbar";
+import "./styles/Index.css";
 
 function App() {
+  // is on the web projects by default
+  const [page, setPage] = useState(<Web />);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar page={page} setPage={setPage}/>
+      {page}
     </div>
   );
 }
