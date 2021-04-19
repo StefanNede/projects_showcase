@@ -9,6 +9,7 @@ export default function Web(){
     const quizAppPhotos = [quizAppLanding, quizAppQuestion, quizAppResult];
     const colorPickerPhotos = [colorPickerMain];
 
+    // each project stored as an json element in an array
     const projects = [{
         title: "Quiz App",
         description: "Basic quiz app...",
