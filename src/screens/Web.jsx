@@ -23,9 +23,11 @@ export default function Web(){
     return (
         <div className="container">
             <h1>Web Projects</h1>
+            <div>
             {projects.map((project, index) => {
                 return <Project project={project} key={index} />
             })}
+            </div>
         </div>
     )
 }

@@ -4,10 +4,12 @@ import "../styles/Project.css";
 
 export default function Project({project}){
     return (
-        <div className="project-container">
-            <h5>{project.title}</h5>
-            <p>{project.description}</p>
-            <ImageSlider images={project.images}/>
+        <div className="projects-container">
+            <div className="project-container">
+                <h5>{project.title}</h5>
+                <p>{project.description}</p>
+                <ImageSlider images={project.images}/>
+            </div>
         </div>
     )
 }
