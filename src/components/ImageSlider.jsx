@@ -21,7 +21,7 @@ export default function ImageSlider({images}){
     return (
         <div className="image-slider">
             <button onClick={moveBackward}>{left}</button>
-            <img src={images[currentImage]} alt="hello" width="100vw" />
+            <img src={images[currentImage]} alt="project-image" width="400vw" />
             <button onClick={moveForward}>{right}</button>
         </div>
     )

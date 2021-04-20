@@ -4,6 +4,7 @@ import quizAppLanding from "../images/web/quizapp/landing.png";
 import quizAppQuestion from "../images/web/quizapp/question.png";
 import quizAppResult from "../images/web/quizapp/result.png";
 import colorPickerMain from "../images/web/colorpicker.png";
+import "../styles/Main.css";
 
 export default function Web(){
     const quizAppPhotos = [quizAppLanding, quizAppQuestion, quizAppResult];
